@@ -1,0 +1,764 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/albumes2.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #0b132b;
+  color: #fff;
+  padding: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logazo img {
+  width: 130px;
+  height: 150px;
+}
+header nav a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 60px;
+  border-radius: 300px;
+  transition: background-color 0.3s ease;
+  margin-right: 100px;
+  font-family: "stro";
+}
+header nav a:hover {
+  background-color: #3a506b;
+}
+header nav .nav-link {
+  font-size: 20px;
+  font-weight: bold;
+}
+header nav .nav-link:active {
+  background-color: #1e2b44;
+}
+
+@font-face {
+  font-family: "stro";
+  src: url("/fonts/CaviarDreams.ttf");
+}
+/* H1-H6 */
+h1 {
+  font-size: 90px;
+  text-align: center;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 70px;
+  border-radius: 20px;
+  font-family: "stro";
+}
+
+.date,
+.dat,
+.tipag,
+.tipe {
+  font-family: "stro";
+}
+
+.dat {
+  font-size: 17px;
+}
+
+/* TARJETAS DE INICIO */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.tarjeta-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.tarjeta-container .tarjeta {
+  background: linear-gradient(to bottom right, #001a33, #004080);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: slideUp 1s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-origin: center;
+}
+.tarjeta-container .tarjeta:hover, .tarjeta-container .tarjeta:active {
+  transform: translateY(-10px) rotateY(10deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-container .tarjeta h2 {
+  margin-bottom: 10px;
+  font-family: stro;
+}
+.tarjeta-container .tarjeta p {
+  margin-bottom: 20px;
+  font-family: stro;
+}
+.tarjeta-container .tarjeta .boton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta-container .tarjeta:hover, .tarjeta-container .tarjeta:active {
+    transform: translateY(-5px) rotateY(5deg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarjeta-container .tarjeta:hover, .tarjeta-container .tarjeta:active {
+    transform: translateY(-3px) rotateY(3deg);
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #0b132b;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "stro";
+}
+footer .logo img {
+  width: 30px;
+  height: auto;
+}
+footer .links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+/* PAGINA EXPLORAR */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+.image-grid .image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  max-width: 300px;
+  max-height: 400px;
+}
+.image-grid .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+}
+.image-grid .image-container:hover img {
+  filter: blur(2px);
+}
+.image-grid .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 14px;
+}
+.image-grid .image-container .overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.image-grid .image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* PAGINA CHARTS */
+.column {
+  display: inline-block;
+  width: 650px;
+  height: 520px;
+  margin: 5%;
+  vertical-align: top;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, #3a506b, #1c2541, #0b132b);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: aliceblue;
+  font-family: "ache2";
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: #2f85ee;
+}
+.column ol {
+  list-style: none;
+  padding-left: 40px;
+  counter-reset: my-counter;
+}
+.column ol li {
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  counter-increment: my-counter;
+}
+.column ol li::before {
+  content: counter(my-counter);
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+.column ol li img {
+  vertical-align: middle;
+  margin-right: 5px;
+  max-width: 60px;
+  height: auto;
+}
+.column ol li:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% - 100px);
+  width: 20px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.row {
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tuki {
+  border-radius: 5px;
+}
+
+.chah {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "plastic";
+  src: url("/fonts/Plastic Beach.ttf");
+}
+@font-face {
+  font-family: "starboy";
+  src: url("/fonts/Frisans Std Black.otf");
+}
+@font-face {
+  font-family: "drag";
+  src: url("/fonts/Devil Breeze Bold.ttf");
+}
+@font-face {
+  font-family: "punk";
+  src: url("/fonts/Daft Font.TTF");
+}
+@font-face {
+  font-family: "avi";
+  src: url("/fonts/Avicii-lOn5.ttf");
+}
+@font-face {
+  font-family: "zzz";
+  src: url("/fonts/Superstar M54.ttf");
+}
+@font-face {
+  font-family: "ju";
+  src: url("/fonts/LAMEBRAINS.ttf");
+}
+@font-face {
+  font-family: "skrr";
+  src: url("/fonts/scary_glyphs_and_nice_characters.ttf");
+}
+@font-face {
+  font-family: "marv";
+  src: url("/fonts/MetalGothic-DemoVersion-Regular.ttf");
+}
+@font-face {
+  font-family: "beyon";
+  src: url("/fonts/steelfish eb.otf");
+}
+@font-face {
+  font-family: "ushe";
+  src: url("/fonts/Get Now.ttf");
+}
+@font-face {
+  font-family: "carr";
+  src: url("/fonts/pandaman-Light.otf");
+}
+@font-face {
+  font-family: "stro";
+  src: url("/fonts/CaviarDreams.ttf");
+}
+@font-face {
+  font-family: "empir";
+  src: url("/fonts/AUGUSTUS.TTF");
+}
+@font-face {
+  font-family: "coa";
+  src: url("/fonts/OldLondon.ttf");
+}
+@font-face {
+  font-family: "calv";
+  src: url("/fonts/Bauhaus (1).ttf");
+}
+@font-face {
+  font-family: "amig";
+  src: url("/fonts/High Jersey.ttf");
+}
+@font-face {
+  font-family: "cua";
+  src: url("/fonts/coolvetica rg.otf");
+}
+@font-face {
+  font-family: "ache2";
+  src: url("/fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "ache3";
+  src: url("/fonts/Lato-Light.ttf");
+}
+h3 {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "ache3";
+}
+
+.gorillaz {
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-family: "plastic";
+}
+
+.abel {
+  color: rgb(255, 238, 0);
+  font-family: "starboy";
+  font-size: 40px;
+}
+
+.imagine {
+  font-family: "drag";
+  font-size: 30px;
+}
+
+.daft {
+  font-family: "punk";
+  color: #ff0303;
+  font-size: 40px;
+}
+
+.true {
+  font-family: "avi";
+  font-size: 50px;
+}
+
+.sz {
+  font-family: "zzz";
+  color: #2f85ee;
+  font-size: 60px;
+}
+
+.kendrick {
+  color: #ff0303;
+  font-size: 30px;
+}
+
+.juice {
+  color: #9f49f5;
+  font-size: 40px;
+  font-family: "ju";
+}
+
+.skr {
+  letter-spacing: 4px;
+  font-size: 80px;
+  font-family: "skrr";
+}
+
+.lred {
+  color: red;
+}
+
+.mar {
+  font-size: 40px;
+  color: #64d4b6;
+  font-family: "marv";
+}
+
+.bey {
+  font-size: 50px;
+  color: #f972ca;
+  font-family: "beyon";
+}
+
+.us {
+  font-size: 40px;
+  color: #f33131;
+  font-family: "ushe";
+}
+
+.car {
+  font-size: 50px;
+  color: #90a8f3;
+  font-family: "carr";
+}
+
+.st {
+  font-size: 40px;
+  color: #d5f9ff;
+  font-family: "stro";
+}
+
+.empi {
+  color: #c78a58;
+  font-family: "empir";
+}
+
+.coast {
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "coa";
+}
+
+.cal {
+  color: #5fff89;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "calv";
+}
+
+.mig {
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: "amig";
+}
+
+.cuar {
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: "cua";
+}
+
+.noti,
+.not {
+  font-family: "stro";
+}
+
+.not {
+  font-size: 17px;
+}
+
+/* PAGINA NEWS */
+.alb {
+  text-align: center;
+  font-family: "stro";
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.cont4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cont5 {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.img-tex {
+  margin-right: 50px;
+  color: #ccc;
+  text-align: center;
+}
+.img-tex img {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.noticia {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.noticia .img-2 {
+  flex: 0 0 30%;
+}
+.noticia .img-2 img {
+  max-width: 100%;
+  height: auto;
+}
+.noticia .info {
+  flex: 0 0 70%;
+  color: #001a33;
+  max-width: 100%;
+}
+
+.noti {
+  font-size: 40px;
+}
+
+.titu,
+.fest {
+  font-family: "stro";
+  color: white;
+  font-size: 50px;
+  align-items: center;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.event {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .event {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .event {
+    padding: 5px;
+  }
+}
+.event1, .event2, .event3, .event4, .event5 {
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  border: 1px solid #c78a58;
+  color: #ccc;
+}
+@media screen and (max-width: 768px) {
+  .event1, .event2, .event3, .event4, .event5 {
+    border: 1px solid #4f8471;
+  }
+}
+@media screen and (max-width: 480px) {
+  .event1, .event2, .event3, .event4, .event5 {
+    border: 1px solid #6dcbe5;
+  }
+}
+.event1 {
+  background-image: url(https://itsoundsalternative.com/wp-content/uploads/2021/04/MILKY-CHANCE-MIERCOLES.jpg);
+}
+.event2 {
+  background-image: url(https://ca-times.brightspotcdn.com/dims4/default/e493441/2147483647/strip/true/crop/5097x7637+0+0/resize/2000x2997!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa5%2F8e%2F49600e50425eab1a6193a05c1df7%2Fcuarteto-2.jpg);
+}
+.event3 {
+  background-image: url(https://www.altpress.com/wp-content/uploads/2022/01/07/ashnikko-1052x592.jpg?t=1689165321);
+}
+.event4 {
+  background-image: url(https://editorialtelevisa.brightspotcdn.com/dims4/default/d40adc3/2147483647/strip/true/crop/1066x600+0+45/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2022%2F09%2FLouis-Tomlinson.jpg);
+}
+.event5 {
+  background-image: url(https://resizer.glanacion.com/resizer/v2/el-exito-a-luck-ra-le-llego-de-la-mano-de-dos-CCAQ2BSYRVBVBDE7SJUDFX7C5I.JPG?auth=5ccdaf6ad4f0c13974581003cdcdad2656bd063bc3c39489a3deaefe8bdb6c84&width=880&height=586&quality=70&smart=true);
+}
+
+.event {
+  padding: 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .event1 {
+    background-image: url(https://itsoundsalternative.com/wp-content/uploads/2021/04/MILKY-CHANCE-MIERCOLES.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid #c78a58;
+    color: #ccc;
+  }
+  .event2 {
+    background-image: url(https://ca-times.brightspotcdn.com/dims4/default/e493441/2147483647/strip/true/crop/5097x7637+0+0/resize/2000x2997!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa5%2F8e%2F49600e50425eab1a6193a05c1df7%2Fcuarteto-2.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid #4f8471;
+    color: #ccc;
+  }
+  .event3 {
+    background-image: url(https://www.altpress.com/wp-content/uploads/2022/01/07/ashnikko-1052x592.jpg?t=1689165321);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid #42478b;
+    color: #ccc;
+  }
+  .event4 {
+    background-image: url(https://editorialtelevisa.brightspotcdn.com/dims4/default/d40adc3/2147483647/strip/true/crop/1066x600+0+45/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2022%2F09%2FLouis-Tomlinson.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid #d42e22;
+    color: #ccc;
+  }
+  .event5 {
+    background-image: url(https://resizer.glanacion.com/resizer/v2/el-exito-a-luck-ra-le-llego-de-la-mano-de-dos-CCAQ2BSYRVBVBDE7SJUDFX7C5I.JPG?auth=5ccdaf6ad4f0c13974581003cdcdad2656bd063bc3c39489a3deaefe8bdb6c84&width=880&height=586&quality=70&smart=true);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    border: 1px solid #6dcbe5;
+    color: #ccc;
+  }
+}
+
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-column {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.video {
+  width: 670px;
+  height: 400px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.coa {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logazo img {
+    width: 100px;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .links {
+    margin-top: 20px;
+  }
+  .nav-link {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logazo img {
+    width: 60px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    margin-bottom: 5px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .overlay {
+    border-radius: 8px;
+  }
+  .overlay-content h4 {
+    font-size: 20px;
+  }
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+    border-radius: 10px;
+  }
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
