@@ -669,11 +669,11 @@ h3 {
         color: #ccc;
 
         @media screen and (max-width: 768px) {
-            border: 1px solid #4f8471; // Cambiar el color del borde en dispositivos móviles
+            border: 1px solid #4f8471;
         }
 
         @media screen and (max-width: 480px) {
-            border: 1px solid #6dcbe5; // Cambiar el color del borde en dispositivos móviles aún más pequeños
+            border: 1px solid #6dcbe5;
         }
     }
 
