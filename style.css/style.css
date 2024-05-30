@@ -44,7 +44,7 @@ header nav .nav-link:active {
 
 @font-face {
   font-family: "stro";
-  src: url("/fonts/CaviarDreams.ttf");
+  src: url("../fonts/CaviarDreams.ttf");
 }
 /* H1-H6 */
 h1 {
