@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/assets/albumes2.jpg");
+  background-image: url("./assets/albumes2.jpg");
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-size: cover;
@@ -44,7 +44,7 @@ header nav .nav-link:active {
 
 @font-face {
   font-family: "stro";
-  src: url("/fonts/CaviarDreams.ttf");
+  src: url("./fonts/CaviarDreams.ttf");
 }
 /* H1-H6 */
 h1 {
@@ -270,83 +270,83 @@ footer .links a:hover {
 
 @font-face {
   font-family: "plastic";
-  src: url("/fonts/Plastic Beach.ttf");
+  src: url("./fonts/Plastic Beach.ttf");
 }
 @font-face {
   font-family: "starboy";
-  src: url("/fonts/Frisans Std Black.otf");
+  src: url("./fonts/Frisans Std Black.otf");
 }
 @font-face {
   font-family: "drag";
-  src: url("/fonts/Devil Breeze Bold.ttf");
+  src: url("./fonts/Devil Breeze Bold.ttf");
 }
 @font-face {
   font-family: "punk";
-  src: url("/fonts/Daft Font.TTF");
+  src: url("./fonts/Daft Font.TTF");
 }
 @font-face {
   font-family: "avi";
-  src: url("/fonts/Avicii-lOn5.ttf");
+  src: url("./fonts/Avicii-lOn5.ttf");
 }
 @font-face {
   font-family: "zzz";
-  src: url("/fonts/Superstar M54.ttf");
+  src: url("./fonts/Superstar M54.ttf");
 }
 @font-face {
   font-family: "ju";
-  src: url("/fonts/LAMEBRAINS.ttf");
+  src: url("./fonts/LAMEBRAINS.ttf");
 }
 @font-face {
   font-family: "skrr";
-  src: url("/fonts/scary_glyphs_and_nice_characters.ttf");
+  src: url("./fonts/scary_glyphs_and_nice_characters.ttf");
 }
 @font-face {
   font-family: "marv";
-  src: url("/fonts/MetalGothic-DemoVersion-Regular.ttf");
+  src: url("./fonts/MetalGothic-DemoVersion-Regular.ttf");
 }
 @font-face {
   font-family: "beyon";
-  src: url("/fonts/steelfish eb.otf");
+  src: url("./fonts/steelfish eb.otf");
 }
 @font-face {
   font-family: "ushe";
-  src: url("/fonts/Get Now.ttf");
+  src: url("./fonts/Get Now.ttf");
 }
 @font-face {
   font-family: "carr";
-  src: url("/fonts/pandaman-Light.otf");
+  src: url("./fonts/pandaman-Light.otf");
 }
 @font-face {
   font-family: "stro";
-  src: url("/fonts/CaviarDreams.ttf");
+  src: url("./fonts/CaviarDreams.ttf");
 }
 @font-face {
   font-family: "empir";
-  src: url("/fonts/AUGUSTUS.TTF");
+  src: url("./fonts/AUGUSTUS.TTF");
 }
 @font-face {
   font-family: "coa";
-  src: url("/fonts/OldLondon.ttf");
+  src: url("./fonts/OldLondon.ttf");
 }
 @font-face {
   font-family: "calv";
-  src: url("/fonts/Bauhaus (1).ttf");
+  src: url("./fonts/Bauhaus (1).ttf");
 }
 @font-face {
   font-family: "amig";
-  src: url("/fonts/High Jersey.ttf");
+  src: url("./fonts/High Jersey.ttf");
 }
 @font-face {
   font-family: "cua";
-  src: url("/fonts/coolvetica rg.otf");
+  src: url("./fonts/coolvetica rg.otf");
 }
 @font-face {
   font-family: "ache2";
-  src: url("/fonts/Lato-Bold.ttf");
+  src: url("./fonts/Lato-Bold.ttf");
 }
 @font-face {
   font-family: "ache3";
-  src: url("/fonts/Lato-Light.ttf");
+  src: url("./fonts/Lato-Light.ttf");
 }
 h3 {
   font-size: 50px;
