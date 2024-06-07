@@ -1,312 +1,329 @@
 <!DOCTYPE html>
-<html<body lang="es">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Explora un mundo de sonidos frescos y emocionantes. ¡Encuentra tu próxima canción favorita aquí en Rhythm!">
-        <meta name="keywords" content="Estrellas musicales, Iconos de la música, Éxitos del momento, Artistas populares">
-        <title>Rhythm Find</title>
-        <link rel="stylesheet" href="/style.css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora un mundo de sonidos frescos y emocionantes. ¡Encuentra tu próxima canción favorita aquí en Rhythm!">
+    <meta name="keywords" content="Estrellas musicales, Iconos de la música, Éxitos del momento, Artistas populares">
+    <title>Rhythm Find</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-    <body>
-        <header>
-            <div class="logazo">
-                <img src="/assets/logo.png" alt="Logo">
-            </div>
-            <nav>
-                <a href="/index.html" class="nav-link">INICIO</a>
-                <a href="explorar.html" class="nav-link">EXPLORAR</a>
-                <a href="charts.html" class="nav-link">CHARTS</a>
-                <a href="news.html" class="nav-link">NOVEDADES</a>
-                <a href="eventos.html" class="nav-link">EVENTOS</a>
-            </nav>
-        </header>
-        <h1>EXPLORAR LA MUSICA</h1>
-        <h3>R&B</h3>
-        <div class="image-grid">
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/b9/3a/e6/b93ae64c123c2430a343ba12b26dd8ce.jpg" alt="Imagen 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="sz">SZA</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZ8Cy8eCcjXW?utm_source=generator"
-                            width="-50%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/47/f7/5c/47f75caa98ae42737e8e04d505ab72ce.jpg" alt="Imagen 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="mar">MARVIN GAYE</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1VI5MY?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/6d/12/ae/6d12aec7fc863f1016c21562eb8859aa.jpg" alt="Imagen 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="abel">THE WEEKND</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/5l7BWz8Vc4AcLw8qKDdQFL?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/3d/b0/d4/3db0d481a482e8e9a0f0bbb6d035de9c.jpg" alt="Imagen 4">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="us">USHER</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1ahqM0?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/3f/c0/9c/3fc09cfd7675f801665ebac22f95d50a.jpg" alt="Imagen 5">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="bey">BEYONCÉ</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2oU49YwtXI2?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark" style="background-color: #192232;">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo.png" alt="Logo" class="logazo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/explorar.html">EXPLORAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/charts.html">CHARTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/news.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/eventos.html">EVENTOS</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1>EXPLORAR LA MUSICA</h1>
+    <h3>R&B</h3>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/b9/3a/e6/b93ae64c123c2430a343ba12b26dd8ce.jpg" alt="Imagen 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="sz">SZA</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZ8Cy8eCcjXW?utm_source=generator"
+                        width="-50%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-        <h3>ELECTRO</h3>
-        <div class="image-grid">
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/25/21/1a/25211a1ece796b5bb192d0326de5b123.jpg" alt="Imagen 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="daft">DAFT PUNK</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2CNgSk?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/ee/e1/bf/eee1bf67f0bd024c7faf34cbf28fb725.jpg" alt="Imagen 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="cal">CALVIN HARRIS</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/48ZEcQN7YlnIBdbd2fjCcG?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/18/27/d3/1827d308e3d44e56113f710b36a391c8.jpg" alt="Imagen 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="true">AVICII</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/4OPzcO81842QHrnhmeUYlm?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/28/03/e1/2803e1b33d049c6648ecb47603809464.jpg" alt="Imagen 4">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="car">CARL COX</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/6WTw6A5DuW2y60qmQzGpqa?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/74/28/4d/74284d510c001567620a73a8d8c0abc0.jpg" alt="Imagen 5">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="skr">
-                            SKR<span class="lred">ILL</span>EX
-                        </h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO36pSwM?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/47/f7/5c/47f75caa98ae42737e8e04d505ab72ce.jpg" alt="Imagen 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="mar">MARVIN GAYE</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1VI5MY?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-        <h3>ALTERNATIVO</h3>
-        <div class="image-grid">
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/00/e8/b5/00e8b5a6fd1f359913b3ca559d095a8c.jpg" alt="Imagen 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="st">THE STROKES</h4>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/c7/7b/ef/c77bef07fb1e75f2b9c307c3f74ecb5d.jpg" alt="Imagen 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="gorillaz">GORILLAZ</h4>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/0MpFQysKSrExsgUkG6baBj?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/0a/e0/9b/0ae09bb69d1698c86160fcad08438c56.jpg" alt="Imagen 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="cuar">EL CUARTETO DE NOS</h4>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0z4Sxq?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/28/5a/0c/285a0c2f78a351b86d4ce957f05ca8e3.jpg" alt="Imagen 4">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="imagine">IMAGINE DRAGONS</h4>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/1n4tQCPQBLU7toUlRcDRK3?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/7d/fd/b8/7dfdb8f4e3c87d7bd4678565b4f25fd5.jpg" alt="Imagen 5">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="empi">EMPIRE OF THE SUN</h4>
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3BJNUA?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/6d/12/ae/6d12aec7fc863f1016c21562eb8859aa.jpg" alt="Imagen 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="abel">THE WEEKND</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/5l7BWz8Vc4AcLw8qKDdQFL?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-        <h3>HIP-HOP/RAP</h3>
-        <div class="image-grid">
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/43/87/f9/4387f9a51eab4c1f2d7d6cf6e3ac09df.jpg" alt="Imagen 1">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="coast">East Side</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/59NuuaCKjPYqkuImgZccia?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/5d/ad/18/5dad18accfa76051eddea5911fa57a3b.jpg" alt="Imagen 2">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="mig">MIGOS</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/05o7Ko7A3ILetUWs4CWqIR?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/de/a5/2c/dea52c141a8e8b93c36c0cbc12891988.jpg" alt="Imagen 3">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="juice">JUICE WRLD</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/6hUG5p0vCawRowzrZe5C2N?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/59/bb/1e/59bb1e6fbf5769accd437002971ba64a.jpg" alt="Imagen 4">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="kendrick">KENDRICK LAMAR</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/5Y55J7an9kim1t4MtZ0eRn?utm_source=generator"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="https://i.pinimg.com/474x/55/2b/d7/552bd75c08d402b25926bd8b9870835f.jpg" alt="Imagen 5">
-                <div class="overlay">
-                    <div class="overlay-content">
-                        <h4 class="coast">West Side</h4>
-                        <iframe style="border-radius:12px"
-                            src="https://open.spotify.com/embed/playlist/0u7AOW4UTGL3yjsDyDuAKa?utm_source=generator&theme=0"
-                            width="-150%" height="152" frameBorder="0" allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/3d/b0/d4/3db0d481a482e8e9a0f0bbb6d035de9c.jpg" alt="Imagen 4">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="us">USHER</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1ahqM0?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="logo">
-                <img src="/assets/logo.png" alt="Logo">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/3f/c0/9c/3fc09cfd7675f801665ebac22f95d50a.jpg" alt="Imagen 5">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="bey">BEYONCÉ</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2oU49YwtXI2?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="links">
-                <a href="https://www.youtube.com/">You Tube</a>
-                <a href="https://open.spotify.com/intl-es">Spotify</a>
+        </div>
+    </div>
+    <h3>ELECTRO</h3>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/25/21/1a/25211a1ece796b5bb192d0326de5b123.jpg" alt="Imagen 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="daft">DAFT PUNK</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2CNgSk?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/ee/e1/bf/eee1bf67f0bd024c7faf34cbf28fb725.jpg" alt="Imagen 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="cal">CALVIN HARRIS</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/48ZEcQN7YlnIBdbd2fjCcG?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/18/27/d3/1827d308e3d44e56113f710b36a391c8.jpg" alt="Imagen 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="true">AVICII</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/4OPzcO81842QHrnhmeUYlm?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/28/03/e1/2803e1b33d049c6648ecb47603809464.jpg" alt="Imagen 4">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="car">CARL COX</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/6WTw6A5DuW2y60qmQzGpqa?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/74/28/4d/74284d510c001567620a73a8d8c0abc0.jpg" alt="Imagen 5">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="skr">
+                        SKR<span class="lred">ILL</span>EX
+                    </h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO36pSwM?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>ALTERNATIVO</h3>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/00/e8/b5/00e8b5a6fd1f359913b3ca559d095a8c.jpg" alt="Imagen 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="st">THE STROKES</h4>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/c7/7b/ef/c77bef07fb1e75f2b9c307c3f74ecb5d.jpg" alt="Imagen 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="gorillaz">GORILLAZ</h4>
+                    <iframe src="https://open.spotify.com/embed/playlist/0MpFQysKSrExsgUkG6baBj?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/0a/e0/9b/0ae09bb69d1698c86160fcad08438c56.jpg" alt="Imagen 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="cuar">EL CUARTETO DE NOS</h4>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0z4Sxq?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/28/5a/0c/285a0c2f78a351b86d4ce957f05ca8e3.jpg" alt="Imagen 4">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="imagine">IMAGINE DRAGONS</h4>
+                    <iframe src="https://open.spotify.com/embed/playlist/1n4tQCPQBLU7toUlRcDRK3?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/7d/fd/b8/7dfdb8f4e3c87d7bd4678565b4f25fd5.jpg" alt="Imagen 5">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="empi">EMPIRE OF THE SUN</h4>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3BJNUA?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>HIP-HOP/RAP</h3>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/43/87/f9/4387f9a51eab4c1f2d7d6cf6e3ac09df.jpg" alt="Imagen 1">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="coast">East Side</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/59NuuaCKjPYqkuImgZccia?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/5d/ad/18/5dad18accfa76051eddea5911fa57a3b.jpg" alt="Imagen 2">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="mig">MIGOS</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/05o7Ko7A3ILetUWs4CWqIR?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/de/a5/2c/dea52c141a8e8b93c36c0cbc12891988.jpg" alt="Imagen 3">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="juice">JUICE WRLD</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/6hUG5p0vCawRowzrZe5C2N?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/59/bb/1e/59bb1e6fbf5769accd437002971ba64a.jpg" alt="Imagen 4">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="kendrick">KENDRICK LAMAR</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/5Y55J7an9kim1t4MtZ0eRn?utm_source=generator"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/55/2b/d7/552bd75c08d402b25926bd8b9870835f.jpg" alt="Imagen 5">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4 class="coast">West Side</h4>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/0u7AOW4UTGL3yjsDyDuAKa?utm_source=generator&theme=0"
+                        width="-150%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="https://www.youtube.com/">You Tube</a>
+            <a href="https://open.spotify.com/intl-es">Spotify</a>
+        </div>
+    </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    </html>
+
+</html>

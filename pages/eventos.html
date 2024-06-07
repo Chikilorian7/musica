@@ -1,106 +1,124 @@
 <!DOCTYPE html>
-<html<body lang="es">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Encuentra eventos musicales cerca de ti. Conciertos, festivales y más. Vive la música en vivo">
-        <meta name="keywords" content="Conciertos, Festivales de música, Eventos en vivo, Actuaciones en directo">
-        <title>Rhythm Find</title>
-        <link rel="stylesheet" href="/style.css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra eventos musicales cerca de ti. Conciertos, festivales y más. Vive la música en vivo">
+    <meta name="keywords" content="Conciertos, Festivales de música, Eventos en vivo, Actuaciones en directo">
+    <title>Rhythm Find</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-    <body>
-        <header>
-            <div class="logazo">
-                <img src="/assets/logo.png" alt="Logo">
-            </div>
-            <nav>
-                <a href="/index.html" class="nav-link">INICIO</a>
-                <a href="explorar.html" class="nav-link">EXPLORAR</a>
-                <a href="charts.html" class="nav-link">CHARTS</a>
-                <a href="news.html" class="nav-link">NOVEDADES</a>
-                <a href="eventos.html" class="nav-link">EVENTOS</a>
-            </nav>
-        </header>
-        <h1>EVENTOS MUSICALES</h1>
-        <div class="alb">
-            <H2 class="titu">PROXIMOS SHOWS</H2>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark" style="background-color: #192232;">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo.png" alt="Logo" class="logazo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/explorar.html">EXPLORAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/charts.html">CHARTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/news.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/eventos.html">EVENTOS</a>
+                </li>
+            </ul>
         </div>
-        <section class="event-grid">
-            <article class="event event1">
-                <h3 class="date">MILKY CHANCE</h3>
-                <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 24/05/2024</time></p>
-                <p class="dat">Lugar: C Art Media, Buenos Aires</p>
-            </article>
-            <article class="event event2">
-                <h3 class="date">EL CUARTETO DE NOS</h3>
-                <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 31/08/2024</time></p>
-                <p class="dat">Lugar: Movistar Arena, Buenos Aires</p>
-            </article>
-            <article class="event event3">
-                <h3 class="date">ASHNIKKO</h3>
-                <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 11/10/2024</time></p>
-                <p class="dat">Lugar: Teatro Vorterix, Buenos Aires</p>
-            </article>
-            <article class="event event4">
-                <h3 class="date">LOUIS TOMLINSON</h3>
-                <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 18/05/2024</time></p>
-                <p class="dat">Lugar: Estadio Velez Sarsfield, Buenos Aires</p>
-            </article>
-            <article class="event event5">
-                <h3 class="date">LUCK RA</h3>
-                <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 16-17/05/2024</time></p>
-                <p class="dat">Lugar: Movistar Arena, Bunos Aires</p>
-            </article>
-        </section>
-        <div class="alb">
-            <h2 class="fest">FESTIVALES PASADOS</h2>
+    </header>
+    <h1>EVENTOS MUSICALES</h1>
+    <div class="alb">
+        <H2 class="titu">PROXIMOS SHOWS</H2>
+    </div>
+    <section class="event-grid">
+        <article class="event event1">
+            <h3 class="date">MILKY CHANCE</h3>
+            <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 24/05/2024</time></p>
+            <p class="dat">Lugar: C Art Media, Buenos Aires</p>
+        </article>
+        <article class="event event2">
+            <h3 class="date">EL CUARTETO DE NOS</h3>
+            <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 31/08/2024</time></p>
+            <p class="dat">Lugar: Movistar Arena, Buenos Aires</p>
+        </article>
+        <article class="event event3">
+            <h3 class="date">ASHNIKKO</h3>
+            <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 11/10/2024</time></p>
+            <p class="dat">Lugar: Teatro Vorterix, Buenos Aires</p>
+        </article>
+        <article class="event event4">
+            <h3 class="date">LOUIS TOMLINSON</h3>
+            <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 18/05/2024</time></p>
+            <p class="dat">Lugar: Estadio Velez Sarsfield, Buenos Aires</p>
+        </article>
+        <article class="event event5">
+            <h3 class="date">LUCK RA</h3>
+            <p class="dat"><time datetime="YYYY-MM-DD">Fecha: 16-17/05/2024</time></p>
+            <p class="dat">Lugar: Movistar Arena, Bunos Aires</p>
+        </article>
+    </section>
+    <div class="alb">
+        <h2 class="fest">FESTIVALES PASADOS</h2>
+    </div>
+    <section class="video-section">
+        <div class="video-column">
+            <h3 class="coa">COACHELLA</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/3n-SDAxb_tQ?si=WmTuJVgTsSTN6Qll"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/5iBFsEhG51c?si=5nzBWFlfsZYG208F"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <section class="video-section">
-            <div class="video-column">
-                <h3 class="coa">COACHELLA</h3>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/3n-SDAxb_tQ?si=WmTuJVgTsSTN6Qll"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/5iBFsEhG51c?si=5nzBWFlfsZYG208F"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+        <div class="video-column">
+            <h3 class="coa">TOMORROWLAND</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/_36t06naY1Y?si=Wt_QiXInshly4b3w"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="video-column">
-                <h3 class="coa">TOMORROWLAND</h3>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/_36t06naY1Y?si=Wt_QiXInshly4b3w"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X4Vl2xCT8pQ?si=EHvx_lNnwJInGEFn"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X4Vl2xCT8pQ?si=EHvx_lNnwJInGEFn"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </section>
-
-        <footer>
-            <div class="logo">
-                <img src="/assets/logo.png" alt="Logo">
-            </div>
-            <div class="links">
-                <a href="https://www.youtube.com/">You Tube</a>
-                <a href="https://open.spotify.com/intl-es">Spotify</a>
-            </div>
-        </footer>
-    </body>
-
-    </html>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="https://www.youtube.com/">You Tube</a>
+            <a href="https://open.spotify.com/intl-es">Spotify</a>
+        </div>
+    </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
 
+</html>

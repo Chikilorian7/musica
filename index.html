@@ -1,70 +1,88 @@
 <!DOCTYPE html>
-<html< lang="es">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Déjate inspirar por la diversidad musical y encuentra tu ritmo con Rhythm">
-        <meta name="keywords" content="Música nueva, Descubrimiento musical, Explorar artistas, Géneros musicales">
-        <title>Rhythm Find</title>
-        <link rel="stylesheet" href="/style.css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Déjate inspirar por la diversidad musical y encuentra tu ritmo con Rhythm">
+    <meta name="keywords" content="Música nueva, Descubrimiento musical, Explorar artistas, Géneros musicales">
+    <title>Rhythm Find</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-    <body>
-        <header>
-            <div class="logazo">
-                <img src="/assets/logo.png" alt="Logo">
-            </div>
-            <nav class="menu">
-                <div class="links">
-                    <a href="index.html" class="nav-link">INICIO</a>
-                    <a href="/pages/explorar.html" class="nav-link">EXPLORAR</a>
-                    <a href="/pages/charts.html" class="nav-link">CHARTS</a>
-                    <a href="/pages/news.html" class="nav-link">NOVEDADES</a>
-                    <a href="/pages/eventos.html" class="nav-link">EVENTOS</a>
-                </div>
-            </nav>
-        </header>
-        <h1>DESCUBRE NUEVA MUSICA</h1>
-        <div class="tarjeta-container">
-            <div class="tarjeta">
-                <h2>EXPLORAR</h2>
-                <p>Descubre playlists, artistas y géneros musicales para todos los gustos. Sumérgete en un
-                    mundo de música emocionante y encuentra la banda sonora perfecta para cada momento.</p>
-                <button class="boton">Ver Más</button>
-            </div>
-            <div class="tarjeta">
-                <h2>CHARTS</h2>
-                <p>En esta página, podrás ver las listas de éxitos musicales actuales. Descubre qué
-                    canciones están en la cima de las listas de popularidad y qué artistas están dominando el panorama
-                    musical.</p>
-                <button class="boton">Ver Más</button>
-            </div>
-            <div class="tarjeta">
-                <h2>NOVEDADES</h2>
-                <p>Mantente al día con las últimas novedades musicales en esta página. Aquí encontrarás
-                    información sobre nuevos lanzamientos de álbumes, sencillos, videos musicales y noticias relevantes
-                    del mundo de la música.</p>
-                <button class="boton">Ver Más</button>
-            </div>
-            <div class="tarjeta">
-                <h2>EVENTOS</h2>
-                <p>¿Buscas algo emocionante que hacer? En esta página, encontrarás información sobre
-                    conciertos, festivales y otros eventos musicales próximos en tu área. No te pierdas la oportunidad
-                    de vivir experiencias musicales en vivo inolvidables.</p>
-                <button class="boton">Ver Más</button>
-            </div>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark" style="background-color: #192232;">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo.png" alt="Logo" class="logazo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/explorar.html">EXPLORAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/charts.html">CHARTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/news.html">NOVEDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/eventos.html">EVENTOS</a>
+                </li>
+            </ul>
         </div>
-        <footer>
-            <div class="logo">
-                <img src="/assets/logo.png" alt="Logo">
-            </div>
-            <div class="links">
-                <a href="https://www.youtube.com/">You Tube</a>
-                <a href="https://open.spotify.com/intl-es">Spotify</a>
-            </div>
-        </footer>
-    </body>
-    </html>
+    </header>
+    <h1>DESCUBRE NUEVA MUSICA</h1>
+    <div class="tarjeta-container">
+        <div class="tarjeta">
+            <h2 class="tipag">EXPLORAR</h2>
+            <p class="tipe">Descubre playlists, artistas y géneros musicales para todos los gustos. Sumérgete en un
+                mundo de música emocionante y encuentra la banda sonora perfecta para cada momento.</p>
+            <a href="/pages/explorar.html" class="boton">Ver más</a>
+        </div>
+        <div class="tarjeta">
+            <h2 class="tipag">CHARTS</h2>
+            <p class="tipe">En esta página, podrás ver las listas de éxitos musicales actuales. Descubre qué
+                canciones están en la cima de las listas de popularidad y qué artistas están dominando el panorama
+                musical.</p>
+            <a href="/pages/charts.html" class="boton">Ver más</a>
+        </div>
+        <div class="tarjeta">
+            <h2 class="tipag">NOVEDADES</h2>
+            <p class="tipe">Mantente al día con las últimas novedades musicales en esta página. Aquí encontrarás
+                información sobre nuevos lanzamientos de álbumes, sencillos, videos musicales y noticias relevantes
+                del mundo de la música.</p>
+            <a href="/pages/news.html" class="boton">Ver más </a>
+        </div>
+        <div class="tarjeta">
+            <h2 class="tipag">EVENTOS</h2>
+            <p class="tipe">¿Buscas algo emocionante que hacer? En esta página, encontrarás información sobre
+                conciertos, festivales y otros eventos musicales próximos en tu área. No te pierdas la oportunidad
+                de vivir experiencias musicales en vivo inolvidables.</p>
+            <a href="/pages/eventos.html" class="boton">Ver más</a>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <div class="links">
+            <a href="https://www.youtube.com/">You Tube</a>
+            <a href="https://open.spotify.com/intl-es">Spotify</a>
+        </div>
+    </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
+</html>
